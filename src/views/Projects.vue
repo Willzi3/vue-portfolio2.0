@@ -1,6 +1,7 @@
 <template>
-<h1>Project Page</h1>
+
  <div class="projects">
+  <h1>PROJECTS</h1>
     <div v-for="project in projects" :key="project.id">
 <div class="project">
     <router-link :to="{name: 'ProjectDetails', params: {id: project.id}}">
@@ -15,18 +16,20 @@
 
 <style>
 .projects{
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 20px;
+    background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover;
 }
 .project{
-    border: 1px solid black;
+     border-radius: 10px;
     height: 50vh;
     width: 40vw;
+    box-shadow: 5px 5px 5px 5px lightgray;
 }
 
 </style>
@@ -37,12 +40,12 @@ export default {
        projects: [
       {
         id: 1,
-        title: "HTML",
+        title: "Portfolio",
         description: ""
       },
         {
         id: 2,
-        title: "CSS",
+        title: "Restaurantly",
          description: ""
       },
         {

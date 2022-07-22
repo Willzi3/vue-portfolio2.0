@@ -1,6 +1,7 @@
 <template>
 <div id="Landing">
-  <!-- <img class="image" src="../assets/Zachary__2_-removebg-preview.png" alt="Image Of Zachary Williams"> -->
+ <h1>Zachary Williams</h1>
+ <p>Aspiring Full-Stack Developer</p>
 </div>
 </template>
 
@@ -12,32 +13,20 @@ export default {
 <style scoped>
 #Landing{
   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
-  background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
-  /* display: flex;
+  height: 92vh;
+  display: flex;
   justify-content: center;
-  align-items: flex-end; */
+  align-items: center;
+  flex-direction: column;
 }
-/* .image{
-  height: 95vh;
-    width: 56vh;
-} */
-#Landing:hover{
-  cursor: pointer;
-  background-image: url(../assets/sawyer-bengtson-xRvUIJiKavI-unsplash.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  transition: all 2s ease-in;
-}
-
-/* #Landing h1{
-  font-size: 5rem;
+#Landing h1{
+  font-size: 6rem;
   color: white;
 }
 #Landing p{
   font-size: 2rem;
   color: white;
-} */
+}
+
 </style>

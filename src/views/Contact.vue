@@ -1,15 +1,24 @@
 <template>
+
   <div id="Contact">
-    <h1>Contact Page</h1>
+    <h1>CONTACT</h1>
     <div class="container">
       <div class="row">
         <div class="col">
           <!-- modify this form HTML and place wherever you want your form -->
-<form
+<form class="form"
   action="https://formspree.io/f/mrgjnazl"
   method="POST"
 >
+<label>
+    Your Name:
+    <input type="text" name="name">
+  </label>
   <label>
+    <label>
+    Your Number:
+    <input type="text" name="number">
+  </label>
     Your email:
     <input type="email" name="email">
   </label>
@@ -36,6 +45,14 @@ export default {
 </script>
 
 <style scoped>
+#Contact{
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover;
+}
 .container
 .row{
   display: flex;
@@ -46,5 +63,15 @@ export default {
  width: 500px;
  height: 500px;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  
 }
 </style>

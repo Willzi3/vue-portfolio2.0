@@ -39,6 +39,7 @@
 /* Navbar */
 .nav {
   z-index: 1000;
+  padding: 0;
 }
 .text {
   color: white;

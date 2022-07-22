@@ -1,13 +1,15 @@
 <template>
   <div id="Testimonial">
-    <h1>Testimonial Page</h1>
+    <h1>TESTIMONIALS</h1>
     <div class="testimonials">
        <div class="testimonial" v-for="testimonial in testimonials" :key="testimonial.id">
-        <router-link :to="{name: 'TestimonialDetails', params: {id: testimonial.id}}">
-    <img class="testimonial-image" v-bind:src="testimonial.image">
-    <p>{{ testimonial.fullName}}</p>
+    <div class="testimonial-image">
+       <img  v-bind:src="testimonial.image">
+    </div>
+   <div class="testimonial-text">
+     <p>{{ testimonial.fullName}}</p>
     <p>{{ testimonial.message}}</p>
-        </router-link>
+   </div>
       </div>
     </div>
      
@@ -57,15 +59,37 @@ export default {
 </script>
 
 <style scoped>
-.testimonial-image{
+#Testimonial{
+  height: 92vh;
+  background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover;
+}
+.testimonial-image img{
   height: 200px;
   width: 200px;
+  border-radius: 10px;
+}
+.testimonial-text{
+   border: 1px solid black;
+   width: 50%;
 }
 .testimonial{
-  border: 1px solid black;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 40%;
+  
 }
+
 .testimonials{
-  border: 1px solid black;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  
 }
 </style>>

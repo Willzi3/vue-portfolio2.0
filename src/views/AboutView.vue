@@ -92,12 +92,18 @@ export default {
 
 
 <style scoped>
+h1{
+  font-family: "Alfa Slab One";
+  font-size: 2.5rem;
+}
 
 #About{
-  height: 100vh;
+  height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
+   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover;
 }
 .image{
   margin-right: -180px;
@@ -152,7 +158,7 @@ export default {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: gray;
   color: white;
   transform: rotateY(180deg);
   border-radius: 10px;
@@ -167,27 +173,37 @@ export default {
 }
 
 .about-details{
-  border: 1px solid black;
+
   margin-inline: 10%;
  
 }
 .about-intro{
   margin-inline: 10%;
-   border: 1px solid black;
     margin-bottom: 10px;
      margin-top: 16px;
+     /* color: white; */
+}
+.about-intro p{
+    font-weight: bold;
+    font-size: 16px;
 }
 .details{
   display: flex;
   justify-content: space-between;
+  /* color: white; */
+}
+
+.details p{
+  font-weight: bold;
+  font-size: 18px;
 }
 
 
 .skill {
-  border: 1px solid black;
   height: 140px;
   width: 140px;
+  border-radius: 10px;
+  background-color: white;
+  
 }
-
-
 </style>

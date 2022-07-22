@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col">
         <div class="info-details">
-          <h1>Biography</h1>
+          <h2>Biography</h2>
             <div class="info">
             <h3>Name</h3>
             <p>Zachary Williams</p>
@@ -33,7 +33,7 @@
         </div>
        <div class="info-details">
         <div class="edu">
-          <h3>Matric</h3>
+          <h2>Matric</h2>
           <p>Matriculated at Melkbosstrand High School.</p>
         </div>
         <div class="edu">
@@ -52,17 +52,8 @@
 
         </div>
         <div class="col">
-          <div class="skills-container">
-            <h1>Skill</h1>
-            <div class="skills">
-              <div v-for="skill in skills" :key="skill.id">
-              <p class="skill" >{{ skill.title}}</p>
-            </div>
-            </div>
-        </div></div>
-        <div class="col">
           <div class="info-details">
-            <h1>Experience</h1>
+            <h2>Experience</h2>
             <div class="exp">
               <p>2018-2019</p>
               <h3>Delivery Driver</h3>
@@ -75,22 +66,17 @@
             </div>
           </div>
           <div class="info-detail">
-            <h1>Socials</h1>
             <div class="socials">
-              <i class="fa-solid fa-music"></i>
-              <h3>LinkedIn</h3>
+              <i class="fa-brands fa-linkedin"></i>
             </div>
             <div class="socials">
-              <i class="fa-solid fa-music"></i>
-              <h3>CodePen</h3>
+              <i class="fa-brands fa-github"></i>
             </div>
             <div class="socials">
-              <i class="fa-solid fa-music"></i>
-              <h3>Email</h3>
+            <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="socials">
-              <i class="fa-solid fa-music"></i>
-              <h3>GitHub</h3>
+              <i class="fa-brands fa-codepen"></i>
             </div>
           </div>
         </div>
@@ -136,31 +122,37 @@ export default {
 </script>
 
 <style scoped>
+#Resume{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover;
+}
+.container{
+  margin-bottom: 20px;
+}
 .row{
   display: flex;
+  gap: 5px;
 
 }
 .col{
-  border: 1px solid black;
-  height: 100vh;
+  
   width: 40vw;
 }
 
 .profile-img{
-  border: 1px solid black;
   border-radius: 50%;
   padding: 20px;
   margin-bottom: -60px;
   z-index: 1;
 }
-.skills-container{
-  border: 1px solid black;
-  margin-top: 20%;
-  margin-inline: 10px;
-  height: 90vh;
-}
+
 .skill{
-  border: 1px solid black;
+border: 1px solid black;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -180,6 +172,8 @@ export default {
   border: 1px solid black;
   margin-top: 10px;
   margin-inline: 10px;
+  background-color: white;
+    border-radius: 10px;
 }
 .info{
   display: flex;
@@ -187,15 +181,18 @@ export default {
 }
 .socials{
   display: flex;
-  border: 1px solid black;
   align-items: center;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  justify-content: center;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
   
 }
 .info-detail{
-  border: 1px solid black;
+ border: 1px solid black;
   margin-top: 10px;
   margin-inline: 10px;
   display: flex;
@@ -204,6 +201,8 @@ export default {
   padding: 10px;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+   background-color: white;
 }
 
 
