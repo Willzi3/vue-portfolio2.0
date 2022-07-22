@@ -9,26 +9,12 @@
           <!-- modify this form HTML and place wherever you want your form -->
 <form class="form"
   action="https://formspree.io/f/mrgjnazl"
-  method="POST"
->
-<label>
-    Your Name:
-   
-  </label>
-   <input type="text" name="name">
-  <label>
-    Your Number:
-  </label>
-   <input type="text" name="number">
-  <label>
-    Your email:
-  </label>
-   <input type="email" name="email">
-  <label>
-    Your message:
-  </label>
-  <textarea name="message"/>
-  <button type="submit">Send</button>
+  method="POST">
+    <input class="form-input" type="text" name="name" placeholder="Name...">
+    <input class="form-input" type="text" name="number" placeholder="Number...">
+    <input class="form-input" type="email" name="email" placeholder="Email...">
+    <textarea class="form-input" name="message"/>
+    <button type="submit">Send</button>
 </form>
         </div>
         <div class="col">
@@ -46,13 +32,19 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  font-size: 6rem;
+  font-family: alfa slab one;
+  color: black;
+}
 #Contact{
   height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
-   /* background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
-  background-size: cover; */
+  box-shadow: 5px 5px 5px 5px lightgray;
+  border-radius: 10px;
+  margin: 30px;
 }
 .container
 .row{
@@ -67,18 +59,30 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .form{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 10px;
+  gap: 20px;
   
 }
-label{
-  border: 1px solid black;
-  width: 280px;
-  display: flex;
-  gap: 10px;
+.form-input{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+}
+
+.form button {
+  height: 50px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+}
+iframe{
+  border-radius: 10px;
 }
 </style>

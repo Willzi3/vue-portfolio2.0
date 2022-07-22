@@ -114,8 +114,8 @@ h1{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: 380px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -213,7 +213,6 @@ h1{
 .skill-title a{
   text-decoration: none;
   font-weight: bolder;
-  
   font-size: 1.3rem;
   font-family: 'alfa slabs one';
 }

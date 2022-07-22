@@ -65,8 +65,7 @@
   justify-content: center;
   align-items: center;
   color: black;
-   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
-  background-size: cover;
+   
 }
 .row{
   display: flex;
@@ -82,7 +81,7 @@
 }
 h1{
   font-size: 4rem;
-  color: white;
+  color: black;
 }
 
 h2{
