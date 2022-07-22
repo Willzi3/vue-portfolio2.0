@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Skills from '../views/Skills.vue'
-import SkillDetails from '../views/SkillDetails.vue'
+
 
 const routes = [
   {
@@ -40,18 +39,7 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: () => import('../views/Contact.vue')
-  },
-  {
-    path: '/skills',
-    name: 'Skills',
-    component: () => import('../views/Skills.vue')
-  },
-  {
-    path: '/skills/:id',
-    name: 'SkillDetails',
-    component: () => import('../views/SkillDetails.vue'),
-    props: true
-  },
+  }
 ]
 
 const router = createRouter({

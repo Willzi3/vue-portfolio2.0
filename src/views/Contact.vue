@@ -1,8 +1,9 @@
 <template>
 
   <div id="Contact">
-    <h1>CONTACT</h1>
+ 
     <div class="container">
+         <h1>CONTACT</h1>
       <div class="row">
         <div class="col">
           <!-- modify this form HTML and place wherever you want your form -->
@@ -12,21 +13,21 @@
 >
 <label>
     Your Name:
-    <input type="text" name="name">
+   
   </label>
+   <input type="text" name="name">
   <label>
-    <label>
     Your Number:
-    <input type="text" name="number">
   </label>
+   <input type="text" name="number">
+  <label>
     Your email:
-    <input type="email" name="email">
   </label>
+   <input type="email" name="email">
   <label>
     Your message:
-    <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
+  <textarea name="message"/>
   <button type="submit">Send</button>
 </form>
         </div>
@@ -50,8 +51,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
-  background-size: cover;
+   /* background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover; */
 }
 .container
 .row{
@@ -73,5 +74,11 @@ export default {
   padding: 10px;
   gap: 10px;
   
+}
+label{
+  border: 1px solid black;
+  width: 280px;
+  display: flex;
+  gap: 10px;
 }
 </style>

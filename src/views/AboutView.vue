@@ -32,12 +32,10 @@
       </div>
     </div>
     <div class="flip-card-back">
-      <h1>Skills</h1>
+      <h1>SKILLS</h1>
       <div class="skills">
-        <div v-for="skill in skills" :key="skill.id">
-        <router-link :to="{name: 'SkillDetails', params: {id: skill.id}}">
+        <div class="skill-title" v-for="skill in skills" :key="skill.id">
         <p class="skill">{{ skill.title}}</p>
-        </router-link>
      
       </div>  
       </div>
@@ -204,6 +202,19 @@ h1{
   width: 140px;
   border-radius: 10px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+
   
+}
+.skill-title a{
+  text-decoration: none;
+  font-weight: bolder;
+  
+  font-size: 1.3rem;
+  font-family: 'alfa slabs one';
 }
 </style>

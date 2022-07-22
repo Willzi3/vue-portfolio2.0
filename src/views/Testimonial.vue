@@ -50,7 +50,13 @@ export default {
       fullName: "Mziyanda Tobo",
       image: "https://i.postimg.cc/s2d64bw9/Mziyanda-3.jpg",
       message: "Zachary Williams is very consistent and hard-working young man. He is very advanced and that shows in his work. I would highly recommend Zachary to any team or company as he is an impressive asset and addition."
-     }
+     },
+     {
+          id: 6,
+          image: "https://i.postimg.cc/c4RQ1w4h/Yasseen.jpg",
+          fullName: "Yaaseen Davids",
+          message: " Sunethia is a person that is driven by success and she always puts in the hardwork.",
+        },
      
     ]
     }
@@ -60,27 +66,29 @@ export default {
 
 <style scoped>
 #Testimonial{
-  height: 92vh;
-  background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
-  background-size: cover;
+
+  /* background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  background-size: cover; */
 }
 .testimonial-image img{
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 10px;
+  margin: 5px;
 }
 .testimonial-text{
    border: 1px solid black;
    width: 50%;
 }
 .testimonial{
-  box-shadow: 5px 5px 5px 5px lightgrey;
+  border: 1px solid black;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   width: 40%;
+  padding: 5px;
   
 }
 
@@ -88,7 +96,7 @@ export default {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
   
 }

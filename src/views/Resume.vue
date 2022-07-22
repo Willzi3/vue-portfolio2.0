@@ -1,129 +1,66 @@
 <template>
-  <div id="Resume">
-    <div class="container">
-      <img class="profile-img" src="../assets/face.png"/>
-      <div class="row">
-        <div class="col">
-        <div class="info-details">
-          <h2>Biography</h2>
-            <div class="info">
-            <h3>Name</h3>
-            <p>Zachary Williams</p>
+  <section id="Resume">
+        <div class="container bg-dark text-light shadow mb-5 p-5" data-aos="flip-up">
+          <div class="title text-center">
+            <h1>RESUME</h1>
           </div>
-           <div class="info">
-            <h3>Gender</h3>
-            <p>Male</p>
-          </div>
-           <div class="info">
-            <h3>Status</h3>
-            <p>Single</p>
-          </div>
-           <div class="info">
-            <h3>Date Of Birth</h3>
-            <p>2000/09/26</p>
-          </div>
-           <div class="info">
-            <h3>Nationality</h3>
-            <p>South African</p>
-          </div>
-           <div class="info">
-            <h3>Religion</h3>
-            <p>Christian</p>
-          </div>
-        </div>
-       <div class="info-details">
-        <div class="edu">
-          <h2>Matric</h2>
-          <p>Matriculated at Melkbosstrand High School.</p>
-        </div>
-        <div class="edu">
-          <h3>Studies</h3>
-          <p>Started my studies at Code Space in February 2020, until National lockdown in March 2020. I further attended the online classes.</p>
-        </div>
-        <div class="edu">
-          <h3>Self-Studies</h3>
-          <p>In the year 2021,I completed short online courses,until my admission to Life Choices Academy in March 2022.</p>
-        </div>
-        <div class="edu">
-          <h3>Present</h3>
-          <p>In the year 2021,I completed short online courses,until my admission to Life Choices Academy in March 2022.</p>
-        </div>
-       </div>
-
-        </div>
-        <div class="col">
-          <div class="info-details">
-            <h2>Experience</h2>
-            <div class="exp">
-              <p>2018-2019</p>
-              <h3>Delivery Driver</h3>
-              <p>I worked as a delivery driver for Debonairs, Fish Away as well as Steers.</p>
-            </div>
-            <div class="exp">
-              <p>2021</p>
-              <h3>Self-Employed</h3>
-              <p>As someone who is constantly online, i found a way to use that time in order to make some income. Sold computer hardware online.</p>
-            </div>
-          </div>
-          <div class="info-detail">
-            <div class="socials">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div class="socials">
-              <i class="fa-brands fa-github"></i>
-            </div>
-            <div class="socials">
-            <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="socials">
-              <i class="fa-brands fa-codepen"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="timelines">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="timeline education">
+                    <h2 class="timeline-title">Education</h2>
+                    <div class="timeline-items">
+                           <div class="timeline-item">
+                             <h3>Matric</h3>
+                             <time datetime="2017/2019">2019</time>
+                             <div class="location">Matriculated at Melkbosstrand High School.</div>
+                           </div>
+                           <div class="timeline-item">
+                             <h3>Studies</h3>
+                             <time datetime="2020">2020</time>
+                             <div class="location">Started my studies at Code Space in February 2020, until National lockdown in March 2020. I further attended the online classes.</div>
+                           </div>
+                           <div class="timeline-item">
+                             <h3>Self-Studies</h3>
+                             <time datetime="2020">2021</time>
+                             <div class="location">In the year 2021,I completed short online courses,until my admission to Life Choices Academy in March 2022.</div>
+                           </div>
+                           <div class="timeline-item">
+                             <h3>Present</h3>
+                             <time datetime="2020">2022</time>
+                             <div class="location">Furthering my studies through Life Choices Academy.</div>
+                           </div>
+                         </div>
+                       </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="timeline experience">
+                    <h2 class="timeline-title">Experience</h2>
+                    <div class="timeline-items">
+                      <div class="timeline-item">
+                        <h3>Delivery Driver</h3>
+                        <time datetime="2018/2019">2018-2019</time>
+                        <div class="location">I worked as a delivery driver for Debonairs, Fish Away as well as Steers.</div>
+                      </div>
+                      <div class="timeline-item">
+                        <h3>Self-Employed</h3>
+                        <time datetime="2019/2020">2019-2020</time>
+                        <div class="location">As someone who is constantly online, i found a way to use that time in order to make some income. Sold computer hardware online.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+                
+                     
+                    </div>
+      </section>
 </template>
-
-<script>
-export default {
-  data(){
-    return {
-       skills: [
-      {
-        id: 1,
-        title: "HTML",
-      },
-        {
-        id: 2,
-        title: "CSS",
-      },
-        {
-        id: 3,
-        title: "JAVASCRIPT",
-      },
-        {
-        id: 4,
-        title: "VUE",
-      },
-        {
-        id: 5,
-        title: "NODE.JS",
-      },
-        {
-        id: 6,
-        title: "DATABASES",
-      },
-     
-    ]
-    }
-  }
-}
-</script>
 
 <style scoped>
 #Resume{
-  
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,79 +68,28 @@ export default {
    background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
   background-size: cover;
 }
-.container{
-  margin-bottom: 20px;
-}
 .row{
   display: flex;
-  gap: 5px;
-
-}
-.col{
-  
-  width: 40vw;
-}
-
-.profile-img{
-  border-radius: 50%;
-  padding: 20px;
-  margin-bottom: -60px;
-  z-index: 1;
-}
-
-.skill{
-border: 1px solid black;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skills{
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+}
+.timeline-item{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  background: white;
+  color: black;
+  margin: 10px;
+}
+h1{
+  font-size: 4rem;
+  color: white;
 }
 
-.info-details{
-  border: 1px solid black;
-  margin-top: 10px;
-  margin-inline: 10px;
-  background-color: white;
-    border-radius: 10px;
-}
-.info{
-  display: flex;
-  justify-content: space-between;
-}
-.socials{
-  display: flex;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  justify-content: center;
-  font-size: 4rem;
-  background-color: black;
+h2{
   color: white;
-  
 }
-.info-detail{
- border: 1px solid black;
-  margin-top: 10px;
-  margin-inline: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-   background-color: white;
-}
+
+
 
 
 </style>
