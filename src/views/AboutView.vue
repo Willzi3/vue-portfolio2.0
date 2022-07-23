@@ -1,219 +1,112 @@
 <template>
   <div id="About">
-    <img class="image" src="../assets/Zachary__2_-removebg-preview.png"/>
-    <div class="flip-card">
-    <div class="flip-card-inner">
-    <div class="flip-card-front">
-     <div class="about-intro">
-       <h1>ABOUT ME</h1>
-      <p>I like to describe myself as focused and dedicated. If I do something, I do it to the best of my abilities. If I do not know the answer to something, I won't just sit back and have the answer handed to me. I will make sure to find the answer.</p>
-     </div>
-      <div class="about-details">
-        <div class="details">
-          <h3>Full Name</h3>
-          <p>Zachary Williams</p>
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="image" src="../assets/Zachary1.jpg" alt="">
+            </div>
+            <div class="col">
+              <div class="about-text">
+                <h2>ABOUT ME</h2>
+                <p>I like to describe myself as focused and dedicated. If I do something, I do it to the best of my abilities. If I do not know the answer to something, I won't just sit back and have the answer handed to me. I will make sure to find the answer.</p>
+                <div class="about-details">
+                  <div class="details">
+                    <h3>Full Name:</h3>
+                    <h3>Zachary Williams</h3>
+                  </div>
+                  <div class="details">
+                    <h3>Date Of Birth</h3>
+                    <h3>2000/09/26</h3>
+                  </div>
+                  <div class="details">
+                    <h3>Address</h3>
+                    <h3>Melkbosstrand</h3>
+                  </div>
+                  <div class="details">
+                    <h3>Drivers</h3>
+                    <h3>None</h3>
+                  </div>
+                  <div class="details">
+                    <h3>Criminal</h3>
+                    <h3>Record</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="details">
-          <h3>Date Of Birth</h3>
-          <p>2000/09/26</p>
-        </div>
-        <div class="details">
-          <h3>Address</h3>
-          <p>Melkbosstrand</p>
-        </div>
-        <div class="details">
-          <h3>Drivers</h3>
-          <p>None</p>
-        </div>
-        <div class="details">
-          <h3>Criminal Record</h3>
-          <p>None</p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card-back">
-      <h1>SKILLS</h1>
-      <div class="skills">
-        <div class="skill-title" v-for="skill in skills" :key="skill.id">
-        <p class="skill">{{ skill.title}}</p>
-     
-      </div>  
-      </div>
-      
-</div>
-    </div>
+
     </div>
   </div>
 </template>
+
 <script>
-
 export default {
-  data(){
-    return {
-       skills: [
-      {
-        id: 1,
-        title: "HTML",
-      },
-        {
-        id: 2,
-        title: "CSS",
-      },
-        {
-        id: 3,
-        title: "JAVASCRIPT",
-      },
-        {
-        id: 4,
-        title: "VUE",
-      },
-        {
-        id: 5,
-        title: "NODE.JS",
-      },
-        {
-        id: 6,
-        title: "DATABASES",
-      },
-     
-    ]
-    }
-  }
-  
-  
-   
-  }
 
-  
+}
 </script>
 
-
-
-<style scoped>
-h1{
-  font-family: "Alfa Slab One";
-  font-size: 2.5rem;
-}
-
+<style>
 #About{
-  height: 92vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  height: 93vh;
+  background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
+  background-attachment: fixed;
   background-size: cover;
-}
-.image{
-  margin-right: -180px;
-  margin-top: -185px;
-  height: 75vh;
-}
-
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 500px;
-  height: 380px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  border-radius: 10px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: gray;
-  color: white;
-  transform: rotateY(180deg);
-  border-radius: 10px;
-  
-}
-.skills{
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
   justify-content: center;
   align-items: center;
 }
 
-.about-details{
+.image{
+  width: 350px;
+  height: 365px;
+  border-radius: 10px;
+  border: 10px solid black;
+}
 
-  margin-inline: 10%;
- 
+.container{
+  height: 60vh;
+  width: 70vw;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about-intro{
-  margin-inline: 10%;
-    margin-bottom: 10px;
-     margin-top: 16px;
-     /* color: white; */
+
+.row {
+  display: flex;
+  gap: 10px;
 }
-.about-intro p{
-    font-weight: bold;
-    font-size: 16px;
+
+.row .col {
+  width: 450px;
+}
+
+h2{
+  font-size: 3.5rem;
+  font-family: 'Alfa Slab One';
+  color: black;
+}
+
+.about-text p {
+  margin-inline: 8%;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about-details{
+  margin-inline: 8%;
+  margin-bottom: 10px;
 }
 .details{
   display: flex;
   justify-content: space-between;
-  /* color: white; */
-}
-
-.details p{
-  font-weight: bold;
-  font-size: 18px;
-}
-
-
-.skill {
-  height: 140px;
-  width: 140px;
-  border-radius: 10px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
   color: black;
+}
+.about-text{
+  border: 10px solid black;
+  border-radius: 10px;
+}
 
-  
-}
-.skill-title a{
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 1.3rem;
-  font-family: 'alfa slabs one';
-}
 </style>

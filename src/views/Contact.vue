@@ -1,26 +1,25 @@
 <template>
-
   <div id="Contact">
- 
+    <h1>CONTACT</h1>
     <div class="container">
-         <h1>CONTACT</h1>
-      <div class="row">
-        <div class="col">
-          <!-- modify this form HTML and place wherever you want your form -->
-<form class="form"
-  action="https://formspree.io/f/mrgjnazl"
-  method="POST">
-    <input class="form-input" type="text" name="name" placeholder="Name...">
-    <input class="form-input" type="text" name="number" placeholder="Number...">
-    <input class="form-input" type="email" name="email" placeholder="Email...">
-    <textarea class="form-input" name="message"/>
+     <div class="row">
+      <div class="col">
+        <div class="form">
+    <form action="https://formspree.io/f/mpzbvyrb" method="POST">
+    <input class="input" type="text" name="name" placeholder="name..." required>
+    <input class="input" type="email" name="email" placeholder="email..." required>
+    <textarea class="input" name="message" placeholder="message" required></textarea>
     <button type="submit">Send</button>
-</form>
-        </div>
-        <div class="col">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.069675818386!2d18.4926986!3d-33.9856643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1658441707703!5m2!1sen!2sza" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </form>
         </div>
       </div>
+      <div class="col">
+        <div class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.069675818386!2d18.4926986!3d-33.9856643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1658535879974!5m2!1sen!2sza" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+     </div>
+
     </div>
   </div>
 </template>
@@ -31,58 +30,68 @@ export default {
 }
 </script>
 
-<style scoped>
-h1{
-  font-size: 6rem;
-  font-family: alfa slab one;
-  color: black;
-}
+<style>
 #Contact{
-  height: 92vh;
+      height: 93vh;
+    background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 5px 5px 5px lightgray;
-  border-radius: 10px;
-  margin: 30px;
+  flex-direction: column;
 }
-.container
+.container{
+  background: white;
+  border-radius: 10px;
+  height: 70vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 4rem;
+  color: white;
+  font-family: 'alfa slab one';
+  letter-spacing: 1px;
+}
 .row{
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 .col{
- width: 500px;
- height: 500px;
-  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background: black;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-}
-.form{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 20px;
   
 }
-.form-input{
+.input{
   width: 300px;
-  height: 50px;
+  height: 40px;
   border-radius: 10px;
-  background: black;
-  color: white;
+  
 }
 
-.form button {
-  height: 50px;
-  border-radius: 10px;
-  background: black;
-  color: white;
-}
-iframe{
+form button{
+  width: 300px;
+  height: 40px;
   border-radius: 10px;
 }
 </style>

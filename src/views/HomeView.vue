@@ -12,12 +12,13 @@ export default {
 </script>
 <style scoped>
 #Landing{
-  background-image: url(../assets/mike-ko-tjod6u2RpiU-unsplash.jpg);
+  height: 93vh;
+  background-image: url(../assets/josh-rose-trYl7JYATH0-unsplash.jpg);
+  background-attachment: fixed;
   background-size: cover;
-  height: 92vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 #Landing h1{
@@ -28,5 +29,4 @@ export default {
   font-size: 2rem;
   color: white;
 }
-
 </style>
