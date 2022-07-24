@@ -24,9 +24,14 @@ export default {
 #Landing h1{
   font-size: 6rem;
   color: white;
+  font-family: "alfa slab one";
+  letter-spacing: 2px;
 }
 #Landing p{
   font-size: 2rem;
   color: white;
+  font-family: "alfa slab one";
+  letter-spacing: 2px;
 }
+
 </style>

@@ -70,7 +70,7 @@ export default {
 
 <style>
 #Projects{
-  height: 93vh;
+  height: 100vh;
   background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -81,7 +81,7 @@ export default {
 }
 
 .container{
-  height: 70vh;
+  height: 98vh;
   width: 70vw;
   border-radius: 10px;
   display: flex;
@@ -108,6 +108,8 @@ h1{
 }
 .image{
   border-radius: 10px;
+  height: 150px;
+  width: 150px;
  
 }
 .card{
@@ -115,6 +117,8 @@ h1{
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  height: 260px;
+  width: 240px;
 }
 .card-item{
   border: 1px solid white;
