@@ -66,7 +66,7 @@ data() {
 
 <style>
 #Testimonial{
-    height: 93vh;
+    height: 100vh;
     background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -77,8 +77,8 @@ data() {
    
 }
 .container{
-  height: 70vh;
-  width: 70vw;
+  height: 90vh;
+  width: 90vw;
   background:  rgb(33 37 41);;
    border-radius: 10px;
    display: flex;
@@ -103,9 +103,10 @@ p{
   height: 150px;
 }
 .card{
-  border: 1px solid white;
+ box-shadow: 3px 3px 3px 3px white;
   width: 300px;
   height: 300px;
+  border-radius: 10px;
 }
 .row{
   display: flex;
@@ -114,6 +115,85 @@ p{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  gap: 20px;
 }
+@media (min-width: 300px) and (max-width: 1029px) {
+.container{
+  height: 70vh;
+}
+.image{
+  height: 120px;
+  width: 120px;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 1.2rem;
+}
+p{
+  font-size: 12px;
+  margin-inline: 10%;
+}
+.card{
+  height: 250px;
+  width: 250px;
+}
+}
+@media (min-width: 300px) and (max-width: 858px) {
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 10px;
+  }
+  .image{
+    width: 100px;
+    height: 100px;
+  }
+  .card{
+    width: 200px;
+    height: 220px;
+   
+  }
+}
+@media (min-width: 300px) and (max-width: 690px) {
+  .container{
+    height: 90vh;
+  }
+}
+@media (min-width: 300px) and (max-width: 493px) {
+  h1{
+    display: none;
+  }
+  h2{
+    padding: 2px;
+  }
+  .image{
+    display: none;
+  }
+  .card{
+    height: 160px ;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 380px) {
+  .container{
+    height: 79vh;
+    overflow: hidden;
+    padding: 10px;
+  }
+  h2{
+    font-size: 0.8rem;
+  }
+}
+
 
 </style>

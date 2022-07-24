@@ -94,4 +94,77 @@ form button{
   height: 40px;
   border-radius: 10px;
 }
+@media (min-width: 300px) and (max-width: 1026px) {
+.col{
+  width: 350px;
+}
+iframe{
+  width: 350px;
+}
+}
+@media (min-width: 300px) and (max-width: 910px) {
+  /* .container{
+    width: 50vw;
+    height: 55vh;
+  } */
+.row{
+  display: flex;
+  flex-direction: column;
+}
+.col{
+  height: 250px;
+}
+iframe{
+  height: 250px;
+}
+}
+@media (min-width: 250px) and (max-width: 706px) {
+  h1{
+    font-size: 3rem;
+  }
+  .container{
+   height: 55vh;
+  }
+
+form button{
+  width: 180px;
+  height: 25px;
+  border-radius: 3px;
+}
+}
+@media (min-width: 300px) and (max-width: 444px) {
+.col{
+  width: 200px;
+} 
+iframe{
+  width: 200px;
+} 
+.input{
+  width: 180px;
+  height: 25px;
+  border-radius: 3px;
+}
+}
+@media (min-width: 200px) and (max-width: 300px) {
+  h1{
+    font-size: 2rem;
+  }
+.col{
+  width: 100px;
+} 
+iframe{
+  width: 100px;
+} 
+.input{
+  width: 80px;
+  height: 25px;
+  border-radius: 3px;
+}
+form button{
+  width: 80px;
+  height: 25px;
+  border-radius: 3px;
+}
+}
+
 </style>
