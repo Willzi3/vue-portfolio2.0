@@ -2,7 +2,9 @@
 <div id="Landing">
  <h1>Zachary Williams</h1>
  <p>Aspiring Full-Stack Developer</p>
+ <i class="fa-solid fa-chevrons-down"></i>
 </div>
+
 </template>
 
 <script>
@@ -32,6 +34,10 @@ export default {
   color: white;
   font-family: "alfa slab one";
   letter-spacing: 2px;
+}
+i{
+  font-size: 5rem;
+  color: white;
 }
 
 </style>

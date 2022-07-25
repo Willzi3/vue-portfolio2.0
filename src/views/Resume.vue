@@ -377,9 +377,82 @@ body {
 
 }
 
-@media (min-width: 250px) and (max-width: 950px) {
+@media (min-width: 250px) and (max-width: 970px) {
+  .direction-l{
+    width: 200px;
+  }
+   .direction-r{
+    width: 200px;
+  }
+  li{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 3px 3px white;
+    height: 200px;
+    width: 200px
+    }
+  .timeline:before{
+    display: none;
+  }
+  .direction-r .flag:before{
+    display: none;
+  }
+  .direction-l .flag:before{
+    display: none;
+  }
+  .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 250px) and (max-width: 925px) {
+  
+  .timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 250px) and (max-width: 667px) {
+  
+  .flag{
+    display: none;
+  }
+  span.time{
+    text-align: left;
+  }
+  .desc{
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+    height: 50px;
+  }
+  h1{
+    display: none;
+  }
+  .timeline li{
+    padding: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
   .container{
     height: 98vh;
   }
+ 
 }
+
+
 </style>
