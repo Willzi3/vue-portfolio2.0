@@ -27,5 +27,10 @@ footer{
 .icons {
   display: flex;
   gap: 10px;
+  font-size: 2rem;
+}
+.icons a {
+  text-decoration: none;
+  color: white;
 }
 </style>

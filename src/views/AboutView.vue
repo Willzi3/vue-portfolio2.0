@@ -60,17 +60,23 @@ export default {
   width: 350px;
   height: 365px;
   border-radius: 10px;
-  border: 10px solid black;
+  border: 10px solid gray;
+}
+.image:hover {
+  transform: rotate(-10deg);
 }
 
 .container{
   height: 90vh;
   width: 80vw;
-  background: white;
+
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+   background: url(../assets/josh-rose-trYl7JYATH0-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .row {
@@ -85,15 +91,25 @@ export default {
 h2{
   font-size: 3.5rem;
   font-family: 'Alfa Slab One';
-  color: black;
+  color: white;
+}
+h2:hover {
+  color: gray;
+  text-shadow: 5px 5px white;
+  cursor: pointer;
 }
 
 .about-text p {
   margin-inline: 8%;
   font-size: 18px;
-  color: black;
+  color: white;
   font-weight: bold;
   margin-bottom: 10px;
+}
+.about-text p:hover {
+  color: gray;
+  cursor: pointer;
+  
 }
 .about-details{
   margin-inline: 8%;
@@ -102,11 +118,19 @@ h2{
 .details{
   display: flex;
   justify-content: space-between;
-  color: black;
+  color: white;
+  cursor: pointer;
+}
+.details:hover{
+  color: gray;
+  cursor: pointer;
 }
 .about-text{
-  border: 10px solid black;
+  border: 10px solid grey;
   border-radius: 10px;
+}
+.about-text:hover{
+  transform: rotate(10deg);
 }
 @media (max-width: 1140px) {
   h2{
