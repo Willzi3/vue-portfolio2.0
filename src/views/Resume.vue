@@ -74,7 +74,7 @@ export default {
 
 <style>
 #Resume{
-      height: 100vh;
+  
   background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -84,7 +84,7 @@ export default {
   flex-direction: column;
 }
 .container{
-  height: 90vh;
+  height: 98vh;
   width: 70vw;
   background: rgb(33 37 41);
   border-radius: 10px;
@@ -421,6 +421,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .container {
+    overflow: scroll;
+  }
 }
 @media (min-width: 250px) and (max-width: 667px) {
   
@@ -428,7 +431,7 @@ body {
     display: none;
   }
   span.time{
-    text-align: left;
+    display: none;
   }
   .desc{
     background: none;
@@ -441,15 +444,9 @@ body {
   h1{
     display: none;
   }
-  .timeline li{
-    padding: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
+ 
   .container{
-    height: 98vh;
+    height: 80vh;
   }
  
 }
