@@ -184,7 +184,6 @@ h2{
   }
   .about-text{
     width: 200px;
-    
   }
   .col{
     display: flex;

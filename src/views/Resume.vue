@@ -377,12 +377,9 @@ body {
 
 }
 
-@media screen and (min-width: 400px) and (max-width: 660px) {
-
-.direction-l .desc,
-.direction-r .desc {
-	margin: 1em 4em 0 4em;
-}
-
+@media (min-width: 250px) and (max-width: 950px) {
+  .container{
+    height: 98vh;
+  }
 }
 </style>
