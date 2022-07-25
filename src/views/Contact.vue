@@ -155,18 +155,18 @@ iframe{
     font-size: 2rem;
   }
 .col{
-  width: 100px;
+  width: 200px;
 } 
 iframe{
-  width: 100px;
+  width: 200px;
 } 
 .input{
-  width: 80px;
+  width: 150px;
   height: 25px;
   border-radius: 3px;
 }
 form button{
-  width: 80px;
+  width: 150px;
   height: 25px;
   border-radius: 3px;
 }
