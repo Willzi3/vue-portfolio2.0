@@ -42,7 +42,9 @@ export default {
   flex-direction: column;
 }
 .container{
-  background: white;
+  background-image: url(../assets/josh-rose-trYl7JYATH0-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   border-radius: 10px;
   height: 70vh;
   width: 80vw;
@@ -92,6 +94,9 @@ form {
 form button{
   width: 300px;
   height: 40px;
+  border-radius: 10px;
+}
+iframe{
   border-radius: 10px;
 }
 @media (min-width: 300px) and (max-width: 1026px) {

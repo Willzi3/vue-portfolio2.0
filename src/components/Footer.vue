@@ -16,6 +16,10 @@ export default {
 </script>
 
 <style>
+p{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 footer{
     background-color: black;
     color: white;
