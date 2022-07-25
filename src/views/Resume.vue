@@ -74,7 +74,7 @@ export default {
 
 <style>
 #Resume{
-      height: 93vh;
+      height: 100vh;
   background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -84,7 +84,7 @@ export default {
   flex-direction: column;
 }
 .container{
-  height: 75vh;
+  height: 90vh;
   width: 70vw;
   background: rgb(33 37 41);
   border-radius: 10px;
@@ -377,7 +377,7 @@ body {
 
 }
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (min-width: 400px) and (max-width: 660px) {
 
 .direction-l .desc,
 .direction-r .desc {

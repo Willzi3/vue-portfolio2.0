@@ -47,7 +47,7 @@ export default {
 
 <style>
 #About{
-  height: 93vh;
+  height: 100vh;
   background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -64,8 +64,8 @@ export default {
 }
 
 .container{
-  height: 60vh;
-  width: 70vw;
+  height: 90vh;
+  width: 80vw;
   background: white;
   border-radius: 10px;
   display: flex;
@@ -107,6 +107,95 @@ h2{
 .about-text{
   border: 10px solid black;
   border-radius: 10px;
+}
+@media (max-width: 1140px) {
+  h2{
+    font-size: 2rem;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  img.image{
+    width: 350px;
+    height: 300px;
+  }
+  .about-text{
+    width: 350px;
+  }
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  h2{
+    font-size: 1.5rem;
+  }
+  img.image{
+    width: 300px;
+    height: 300px;
+  }
+  .about-text{
+    width: 300px;
+  }
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+  .about-text p{
+    font-size: 14px;
+  }
+  h3{
+    font-size: 14px;
+  }
+}
+@media (max-width: 379px) {
+  h2{
+    font-size: 2rem;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  img.image{
+    width: 250px;
+    height: 200px;
+  }
+  .about-text{
+    width: 250px;
+  }
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  h2{
+    font-size: 1.5rem;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  img.image{
+    width: 200px;
+    height: 200px;
+  }
+  .about-text{
+    width: 200px;
+    
+  }
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+  .about-text p{
+    font-size: 12px;
+  }
+  h3{
+    font-size: 12px;
+  }
 }
 
 </style>

@@ -77,7 +77,7 @@ data() {
    
 }
 .container{
-  height: 90vh;
+  height: 100vh;
   width: 90vw;
   background:  rgb(33 37 41);;
    border-radius: 10px;
