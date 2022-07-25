@@ -74,7 +74,7 @@ export default {
 
 <style>
 #Resume{
-  
+  height: 95vh;
   background-image: url(../assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -84,7 +84,7 @@ export default {
   flex-direction: column;
 }
 .container{
-  height: 98vh;
+  height: 80vh;
   width: 70vw;
   background: rgb(33 37 41);
   border-radius: 10px;
@@ -95,6 +95,10 @@ h1{
   color: white;
   letter-spacing: 1px;
   margin-bottom: 15px;
+}
+h1:hover{
+  color: gray;
+  text-shadow: 5px 5px white;
 }
 body {	
   margin: 0;
@@ -421,18 +425,16 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .container {
-    overflow: scroll;
-  }
 }
 @media (min-width: 250px) and (max-width: 667px) {
   
-  .flag{
+  /* .flag{
     display: none;
-  }
+  } */
   span.time{
     display: none;
-  }
+  } 
+  
   .desc{
     background: none;
     display: flex;
@@ -444,11 +446,40 @@ body {
   h1{
     display: none;
   }
- 
+  li{
+    height: 170px;
+  }
+  #Resume{
+    height: 110vh;
+  }
   .container{
-    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108vh;
+  }
+  .timeline{
+    padding: none;
+    margin-bottom: 100px;
+  }
+  .flag{
+    opacity: 0.1;
   }
  
+  
+ 
+}
+@media (max-width: 320px) {
+  #Resume{
+    height: 120vh;
+  }
+  .container{
+    height: 115vh;
+  }
+  li{
+    width: 170px;
+    height: 200px;
+  }
 }
 
 
